@@ -8,6 +8,7 @@ public class exMatriz7 {
 		Random r = new Random();
 		int [][] matriz = new int [3][3];
 		int aux;
+		boolean trocado = true;
 		
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
@@ -19,15 +20,19 @@ public class exMatriz7 {
 		System.out.println(" ");
 		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				if (matriz[i][j] > matriz[i][matriz.length-1]) {
+			for (int j = 0; j < matriz.length-1; j++) {
+				if (matriz[i][j] > matriz[i][j+1]) {
 					aux = matriz[i][j];
-					matriz[i][j] = matriz[i][matriz.length-1];
-					matriz[i][matriz.length-1] = aux;
-					System.out.print(matriz[i][j] + "\t");
+					matriz[i][j] = matriz[i][j+1];
+					matriz[i][j+1] = aux;
 				}
-				System.out.println(" ");
 			}
+		}
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.println(" ");
 		}
 	}
 

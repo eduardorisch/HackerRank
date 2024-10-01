@@ -2,7 +2,7 @@ package exs;
 
 import java.util.Random;
 
-public class exMatriz7 {
+public class exMatriz8 {
 
 	public static void main(String[] args) {
 		Random r = new Random();
@@ -19,14 +19,11 @@ public class exMatriz7 {
 		System.out.println(" ");
 		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length; j++) {
-				if (matriz[i][j] > matriz[matriz.length-1][j]) {
-					aux = matriz[i][j];
-					matriz[i][j] = matriz[i][matriz.length-1];
-					matriz[matriz.length-1 * (i+1)][j] = aux;
-					System.out.println(matriz[i][j] + "\t");
+			for (int j = 0; j < matriz.length-1; j++) {
+				if(matriz[j][i] < matriz[j+1][i]) {
+					aux = matriz[j+1][i];
+					matriz[j+1][i] = matriz[j][i];
 				}
-				System.out.println(" ");
 			}
 		}
 	}

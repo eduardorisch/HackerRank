@@ -2,13 +2,14 @@ package exs;
 
 import java.util.Random;
 
-public class exMatriz8 {
+public class exMatriz7 {
 
 	public static void main(String[] args) {
 		Random r = new Random();
-		int[][] matriz = new int[3][3];
+		int [][] matriz = new int [3][3];
 		int aux;
-
+		boolean trocado = true;
+		
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
 				matriz[i][j] = r.nextInt(0, 11);
@@ -17,17 +18,18 @@ public class exMatriz8 {
 			System.out.println(" ");
 		}
 		System.out.println(" ");
-
+		
 		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz.length - 1; j++) {
-				if (matriz[j][i] < matriz[j + 1][i]) {
-					aux = matriz[j + 1][i];
-					matriz[j + 1][i] = matriz[j][i];
-					matriz[j][i] = aux;
+			for (int j = 0; j < matriz.length-1; j++) {
+				while (trocado) {
+				if (matriz[i][j] > matriz[i][j+1]) {
+					aux = matriz[i][j];
+					matriz[i][j] = matriz[i][j+1];
+					matriz[i][j+1] = aux;
 				}
 			}
+			}
 		}
-		
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz.length; j++) {
 				System.out.print(matriz[i][j] + "\t");
