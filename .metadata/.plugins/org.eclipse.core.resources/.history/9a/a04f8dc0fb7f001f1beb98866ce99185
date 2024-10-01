@@ -1,0 +1,12 @@
+package exs;
+
+import java.util.Scanner;
+
+public class exMatriz {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+
+	}
+
+}

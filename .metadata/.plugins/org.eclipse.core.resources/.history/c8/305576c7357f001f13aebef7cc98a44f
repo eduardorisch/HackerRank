@@ -1,0 +1,26 @@
+package exs;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class exMatriz10 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Random r = new Random();
+		int m, n;
+
+		// questão a
+		System.out.println("digite o n de linhas");
+		m = in.nextInt();
+		if (m < 1 || m > 30) {
+			System.out.println("tu fez merda");
+		} else {
+			System.out.println("digite o n de colunas");
+		}
+		n = in.nextInt();
+		if (n < 1 || n > 30) {
+			System.out.println(" tu fez merda");
+		int[][] matriz = new int[m][n];
+	}
+

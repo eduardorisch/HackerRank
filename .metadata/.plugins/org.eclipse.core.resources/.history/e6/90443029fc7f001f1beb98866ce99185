@@ -1,0 +1,19 @@
+package exs;
+
+import java.util.Scanner;
+
+public class exMatriz {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int[][]matriz = new int [3][3];
+
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				System.out.println("qual o n da posição L " + i + " e da C " + j + ":");
+				matriz[i][j] = in.nextInt();
+			}
+		}
+	}
+
+}

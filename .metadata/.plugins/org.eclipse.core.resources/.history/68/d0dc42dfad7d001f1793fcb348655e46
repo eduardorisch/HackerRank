@@ -1,0 +1,9 @@
+package exs;
+
+public class exMatriz3 {
+
+	public static void main(String[] args) {
+		int [][] m1 = new int[3][3];
+	}
+
+}

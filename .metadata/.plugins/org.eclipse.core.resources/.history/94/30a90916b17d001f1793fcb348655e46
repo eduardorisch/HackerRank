@@ -1,0 +1,16 @@
+package exs;
+
+import java.util.Random;
+
+public class exMatriz4 {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		int [][] m1 = new int[2][2];
+		int [][] m2 = new int[2][2];
+		int [][] soma = new int[2][2];
+		
+		
+	}
+
+}

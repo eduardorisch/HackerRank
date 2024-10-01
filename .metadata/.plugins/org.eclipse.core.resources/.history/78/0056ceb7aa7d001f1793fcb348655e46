@@ -1,0 +1,28 @@
+package exs;
+
+import java.util.Random;
+
+public class exmatriz2 {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		int[][] matriz = new int[3][3];
+		int soma;
+
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz.length; j++) {
+				matriz[i][j]=r.nextInt();
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.println(" ");
+		}
+		System.out.println(" ");
+		
+		for (int i = 3; i > matriz.length; i++) {
+			for (int j = 3; j > 0; j++) {
+				
+			}
+		}
+	}
+
+}

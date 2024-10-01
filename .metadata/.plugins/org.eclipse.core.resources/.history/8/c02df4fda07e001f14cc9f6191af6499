@@ -1,0 +1,11 @@
+package exs;
+
+public class exMatriz5 {
+
+	public static void main(String[] args) {
+		int [][]matriz = new int [4][4];
+		int impares, pares;
+		
+	}
+
+}
