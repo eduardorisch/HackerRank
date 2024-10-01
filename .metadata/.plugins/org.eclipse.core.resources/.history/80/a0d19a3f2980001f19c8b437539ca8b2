@@ -26,7 +26,7 @@ public class exMatriz7 {
 					if (matriz[i][j] > matriz[i][j + 1]) {
 						aux = matriz[i][j+1];
 						matriz[i][j+1] = matriz[i][j];
-						matriz[i][j] = aux;
+						matriz[i][j + 1] = aux;
 					} else {
 						trocado = false;
 					}
